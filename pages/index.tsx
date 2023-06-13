@@ -13,6 +13,7 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
               <p>Missouri S&T presents...</p>
+              <object type="image/svg+xml" data="line.svg" style={{position: "absolute", top: 0, right: 0, height: "100%", width: "110%", margin: 0, padding: 0}}></object>
             </main>
         </div>
     );
