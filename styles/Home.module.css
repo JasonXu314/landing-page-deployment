@@ -7,4 +7,14 @@
 
 .main p {
   color: white;
+  position: absolute;
+  width: 396px;
+  height: 23px;
+  left: 70px;
+  top: 215px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(86, 136, 152, 0.75);
 }
