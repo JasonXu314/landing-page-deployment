@@ -16,7 +16,13 @@ const Home: NextPage = () => {
                 <p>Missouri S&T presents...</p>
                 <form action="/api/Email">
                     <label htmlFor="email">Email:</label>
-                    <input type="text" id="email" name="email" required />
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                        title="please submit a valid email address"
+                        required />
 
                     <button type="submit">Submit</button>
                 </form>
