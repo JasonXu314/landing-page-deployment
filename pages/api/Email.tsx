@@ -5,15 +5,14 @@ import clientPromise from "../../lib/mongodb";
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         const client = await clientPromise;
-        const db = client.db("pickhacks_2024")
+        const db = client.db("pickhacks_2024");
+        const body = req.query;
 
-        const emails = await db
-            .collection("MailingList")
-            .find({})
-            .limit(10)
-            .toArray();
+        const post = await db.collection("MailingList").insertOne({
+            email: body.email,
+        });
         
-        res.json(emails)
+        res.json(post)
     } catch (e) {
         console.error(e);
     }
