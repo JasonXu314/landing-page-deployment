@@ -1,14 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import React from 'react';
-import styles from '../styles/Home.module.css';
-import { useMediaQuery } from 'usehooks-ts';
 import { IoSendSharp } from 'react-icons/io5';
-import { MouseParallax, ScrollParallax } from 'react-just-parallax';
+import { MouseParallax } from 'react-just-parallax';
+import { useMediaQuery } from 'usehooks-ts';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-	const matches = useMediaQuery('(min-width: 950px)');
+	const matches = useMediaQuery('(max-width: 950px)');
 
 	return (
 		<div className={styles.container}>
@@ -57,17 +55,18 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				{matches && (
-					<div style={{ width: '40%', height: '100%' }}>
-						<MouseParallax
-                            strength={.01}
-                            isAbsolutelyPositioned
-                        >
-							<object
-								type="image/svg+xml"
-								data="line.svg"
-								className={styles.svg}
-							></object>
+				{!matches && (
+					<div
+						style={{ width: '40%', height: '100%', overflow: 'visible' }}
+						ref={(elem) => {
+							if (elem) {
+								console.log(elem.children);
+								(elem.children[0] as any).style.overflow = 'visible';
+								(elem.children[0].children[0] as any).style.overflow = 'visible';
+							}
+						}}>
+						<MouseParallax strength={0.2} isAbsolutelyPositioned>
+							<iframe src="line.svg" height={1080} width={2700} className={styles.svg}></iframe>
 						</MouseParallax>
 					</div>
 				)}
@@ -76,3 +75,4 @@ const Home: NextPage = () => {
 	);
 };
 export default Home;
+

@@ -23,14 +23,15 @@
 }
 
 .svg {
-  position: absolute;
-  top: 0;
-  right: -5em;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-  width: 100em;
-  overflow: visible;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+	width: 100em;
+	overflow: visible;
+	border: none;
 }
 
 .logo {
@@ -224,12 +225,12 @@
 		top: 1em;
 	}
 
-  .info {
-    gap: 4em;
-  }
+	.info {
+		gap: 4em;
+	}
 
 	.title {
-    font-size: 5em;
+		font-size: 5em;
 	}
 
 	.textContainer {
@@ -246,12 +247,13 @@
 		width: 25em;
 	}
 
-  .submit {
-    border-radius: 0.75em;
-  }
+	.submit {
+		border-radius: 0.75em;
+	}
 
 	.socials {
 		margin-top: auto;
-    font-size: 1.5em;
+		font-size: 1.5em;
 	}
 }
+
