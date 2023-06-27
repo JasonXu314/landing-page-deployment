@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Share+Tech+Mono&display=swap');
+@font-face {
+  font-family: 'Gilam Bold';
+  src: url('/Gilam Bold.ttf');
+}
 
 .main {
     height: 100vh;
@@ -46,9 +50,10 @@
 }
 
 .title {
+  font-family: 'Gilam Bold';
   font-weight: 700;
   font-size: 6em;
-  background: linear-gradient(90deg, rgb(63, 166, 251) 0%, rgb(65, 202, 133) 54%, rgb(240, 252, 70) 100%);
+  background: linear-gradient(90deg, #628794 0%, #7fac7a 54%, #dcc666 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -105,4 +110,40 @@
 
 .socialImage a{
   display: block;
+}
+
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailing form{
+  display: flex;
+  align-items: center;
+  height: 2em;
+  width: 25em;
+  border:#93C0C6 2.5px solid;
+  border-radius: 10px;
+  
+}
+
+.mailing input{
+  background-color: transparent;
+  border: transparent;
+  justify-content: center;
+  outline: none;
+  height: 2em;
+  width: 100%;
+}
+
+.submit{
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(90deg, #61aa6d 0%, #4294bf 100%);
+}
+
+.mailing input::placeholder{
+  color:#58797c;
+  font-family: 'Gilam Bold';
 }
