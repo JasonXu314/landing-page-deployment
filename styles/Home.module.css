@@ -1,42 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Share+Tech+Mono&display=swap');
+
 .main {
     height: 100vh;
     width: 100vw;
-    background: rgb(7,25,36);
-    background: linear-gradient(90deg, rgba(7,25,36,1) 0%, rgba(5,34,52,1) 19%, rgba(5,36,55,1) 38%, rgba(8,61,93,1) 84%, rgba(8,64,98,1) 92%, rgba(6,71,112,1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(7, 25, 36, 1) 0%,
+        rgba(5, 34, 52, 1) 19%,
+        rgba(5, 36, 55, 1) 38%,
+        rgba(8, 61, 93, 1) 84%,
+        rgba(8, 64, 98, 1) 92%,
+        rgba(6, 71, 112, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 2.5em;
+    left: 5em;
+}
+
+.info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
 }
 
 .main p {
-  position: absolute;
-  width: 396px;
-  height: 23px;
-  left: 70px;
-  top: 215px;
-  /* font-family: Roboto; */
-  font-style: italic;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: rgba(86, 136, 152, 0.75);
-}
-.main h2 {
-  position: absolute;
-  font-size: 32px;
-  left: 740px;
-  top: 400px;
-  /* font-family: Roboto; */
-  font-style: italic;
-  font-weight: 700;
-  color: rgba(224, 200, 84, 0.75);
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-weight: bold;
 }
 
-.main h1 {
-  position: absolute;
-  font-size: 32px;
-  left: 150px;
-  top: 250px;
-  font-size: 100px;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 0 5em;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 6em;
   background: linear-gradient(90deg, rgb(63, 166, 251) 0%, rgb(65, 202, 133) 54%, rgb(240, 252, 70) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.top, .bottom {
+  opacity: 75%;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.top {
+  color: #568898;
+  margin-right: auto;
+}
+
+.bottom {
+    color: #E0C854;
+    margin-left: auto;
+}
+
+.text {
+  color: #93C0C6;
+  font-size: 2em;
+}
+
+.socials {
+  font-size: 1.7em;
+  color: #93C0C6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1em;
+}
+
+.socialImage {
+  padding: .6em;
+  border-radius: 100px;
+  border: 2.5px solid #93C0C6; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
