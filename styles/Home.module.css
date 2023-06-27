@@ -1,149 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Share+Tech+Mono&display=swap');
 @font-face {
-  font-family: 'Gilam Bold';
-  src: url('/Gilam Bold.ttf');
+	font-family: 'Gilam Bold';
+	src: url('/Gilam Bold.ttf');
 }
 
 .main {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(
-        90deg,
-        rgba(7, 25, 36, 1) 0%,
-        rgba(5, 34, 52, 1) 19%,
-        rgba(5, 36, 55, 1) 38%,
-        rgba(8, 61, 93, 1) 84%,
-        rgba(8, 64, 98, 1) 92%,
-        rgba(6, 71, 112, 1) 100%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(
+		90deg,
+		rgba(7, 25, 36, 1) 0%,
+		rgba(5, 34, 52, 1) 19%,
+		rgba(5, 36, 55, 1) 38%,
+		rgba(8, 61, 93, 1) 84%,
+		rgba(8, 64, 98, 1) 92%,
+		rgba(6, 71, 112, 1) 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  right: -5em;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  width: 100em;
+  overflow: visible;
 }
 
 .logo {
-    position: absolute;
-    top: 2.5em;
-    left: 5em;
+	position: absolute;
+	top: 2.5em;
+	left: 5em;
+	width: 4em;
 }
 
 .info {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5em;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3.75em;
+	height: 100%;
 }
 
 .main p {
-  font-family: Roboto;
-  font-weight: bold;
+	font-family: Roboto;
+	font-weight: bold;
 }
 
 .textContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 0 5em;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	padding: 0 5em;
 }
 
 .title {
-  font-family: 'Gilam Bold';
-  font-weight: 700;
-  font-size: 6em;
-  background: linear-gradient(90deg, #628794 0%, #7fac7a 54%, #dcc666 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-family: 'Gilam Bold';
+	font-weight: 700;
+	font-size: 6em;
+	background: linear-gradient(90deg, #628794 0%, #77b770 54%, #dcc666 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.top, .bottom {
-  opacity: 75%;
-  font-style: italic;
-  font-size: 1.5em;
+.top,
+.bottom {
+	opacity: 75%;
+	font-style: italic;
+	font-size: 1.5em;
 }
 
 .top {
-  color: #568898;
-  margin-right: auto;
+	color: #568898;
+	margin-right: auto;
 }
 
 .bottom {
-    color: #E0C854;
-    margin-left: auto;
+	color: #e0c854;
+	margin-left: auto;
 }
 
 .text {
-  color: #93C0C6;
-  font-size: 2em;
+	color: #93c0c6;
+	font-size: 2em;
 }
 
 .socials {
-  font-size: 1.7em;
-  color: #93C0C6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .5em;
+	font-size: 1.6em;
+	color: #93c0c6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	margin-top: 1.8em;
 }
 
 .buttonContainer {
-  display: flex;
-  gap: 1em;
+	display: flex;
+	gap: 1em;
 }
 
 .socialImage {
-  padding: .6em;
-  border-radius: 100px;
-  border: 2.5px solid #93C0C6; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	padding: 0.6em;
+	border-radius: 100px;
+	border: 0.125em solid #93c0c6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	filter: brightness(0) saturate(100%) invert(88%) sepia(25%) saturate(345%) hue-rotate(138deg) brightness(81%) contrast(89%);
 }
 
-.socialImage:hover {
-  opacity: 0.7;
-  cursor: pointer;
+.socialImage:first-child:hover {
+	filter: brightness(0) saturate(100%) invert(63%) sepia(48%) saturate(5401%) hue-rotate(164deg) brightness(102%) contrast(105%);
 }
 
-.socialImage a{
-  display: block;
+.socialImage:nth-child(2):hover {
+	filter: brightness(0) saturate(100%) invert(55%) sepia(8%) saturate(3247%) hue-rotate(69deg) brightness(110%) contrast(83%);
+}
+
+.socialImage:last-child:hover {
+	filter: brightness(0) saturate(100%) invert(88%) sepia(79%) saturate(2636%) hue-rotate(325deg) brightness(100%) contrast(100%);
+}
+
+.discord {
+	width: 1em;
+}
+
+.linkedin {
+	width: 1em;
+	height: 1em;
+}
+
+.instagram {
+	width: 1em;
+	height: 1em;
 }
 
 .mailing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.25em;
 }
 
-.mailing form{
-  display: flex;
-  align-items: center;
-  height: 2em;
-  width: 25em;
-  border:#93C0C6 2.5px solid;
-  border-radius: 10px;
-  
+.mailing form {
+	display: flex;
+	align-items: center;
+	height: 3.2em;
+	width: 30em;
+	border: #93c0c6 0.125em solid;
+	border-radius: 1em;
+	padding: 0.175em;
 }
 
-.mailing input{
-  background-color: transparent;
-  border: transparent;
-  justify-content: center;
-  outline: none;
-  height: 2em;
-  width: 100%;
+.mailing input {
+	background-color: transparent;
+	border: transparent;
+	justify-content: center;
+	outline: none;
+	height: 100%;
+	width: 21em;
+	padding: 0 1em;
+	color: #93c0c6;
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
-.submit{
-  border-radius: 10px;
-  outline: none;
-  background: linear-gradient(90deg, #61aa6d 0%, #4294bf 100%);
+.submit {
+	border-radius: 0.625em;
+	outline: none;
+	background-image: linear-gradient(to right, #61aa6d, #4294bf, #4294bf, #61aa6d);
+	background-size: 300% 100%;
+	border: 0;
+	width: 7em;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
-.mailing input::placeholder{
-  color:#58797c;
-  font-family: 'Gilam Bold';
+.submit:hover {
+	cursor: pointer;
+	background-position: 100% 0;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.mailing input::placeholder {
+	color: #58797c;
+	font-family: 'Gilam Bold';
+}
+
+@media screen and (max-width: 949px) {
+	.info {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main {
+		padding: 4em 0;
+	}
+
+	.logo {
+		width: 3em;
+		left: 1em;
+		top: 1em;
+	}
+
+  .info {
+    gap: 4em;
+  }
+
+	.title {
+    font-size: 5em;
+	}
+
+	.textContainer {
+		margin-top: 15vh;
+		padding: 0 1em;
+		text-align: center;
+	}
+
+	.text {
+		font-size: 1.7em;
+	}
+
+	.mailing form {
+		width: 25em;
+	}
+
+  .submit {
+    border-radius: 0.75em;
+  }
+
+	.socials {
+		margin-top: auto;
+    font-size: 1.5em;
+	}
 }
