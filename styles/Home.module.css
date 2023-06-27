@@ -97,3 +97,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.socialImage:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.socialImage a{
+  display: block;
+}

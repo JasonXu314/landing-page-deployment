@@ -32,21 +32,23 @@ const Home: NextPage = () => {
                                 title="please submit a valid email address"
                                 required />
 
-                            <button type="submit">Submit</button>
+                            <button type="submit">
+                                <Image src="/images/arrow.png" width={75} height={50} alt="logo"/>
+                            </button>
                         </form>
                     </div>
                     <div className={styles.socials}>
                         <p>Check out our socials</p>
                         <div className={styles.buttonContainer}>
-                            <div className={styles.socialImage}>
-                                <Image src="/images/discord.png" width={35} height={24} alt="logo"/>
-                            </div>
-                            <div className={styles.socialImage}>
-                                <Image src="/images/linkedin.png" width={35} height={33} alt="logo"/>
-                            </div>
-                            <div className={styles.socialImage}>
-                                <Image src="/images/instagram.png" width={34} height={34} alt="logo"/>
-                            </div>
+                            <a className={styles.socialImage} href='https://discord.gg/6PeaMzshkP' target='_blank' rel='noopener noreferrer'>
+                                    <Image src="/images/discord.png" width={35} height={24} alt="logo"/>
+                            </a>
+                            <a className={styles.socialImage} href='https://www.linkedin.com/company/pickhacks/' target='_blank' rel='noopener noreferrer'>
+                                    <Image src="/images/linkedin.png" width={35} height={33} alt="logo"/>
+                            </a>
+                            <a className={styles.socialImage} href='https://www.instagram.com/sandtpickhacks/' target='_blank' rel='noopener noreferrer'>
+                                    <Image src="/images/instagram.png" width={34} height={34} alt="logo"/>
+                            </a>
                         </div>
                     </div>
                 </div>
