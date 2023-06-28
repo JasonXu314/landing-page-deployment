@@ -8,7 +8,7 @@ import { useMediaQuery } from 'usehooks-ts';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-	const matches = useMediaQuery('(max-width: 1440px)') || typeof window === 'undefined';
+	const matches = useMediaQuery('(max-width: 900px)') || typeof window === 'undefined';
 	const [email, setEmail] = useState<string>('');
 	const [success, setSuccess] = useState<boolean>(false);
 	const [error, setError] = useState<boolean>(false);

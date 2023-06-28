@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Share+Tech+Mono&display=swap');
-@font-face {
-	font-family: 'Gilam Bold';
-	src: url('/Gilam Bold.ttf');
+
+.container {
+	font-size: 1.1vw;
 }
 
 .main {
@@ -25,12 +25,12 @@
 
 .svg {
 	position: absolute;
-	top: -8em;
-	right: -10em;
+	top: -8rem;
+	right: -11rem;
 	margin: 0;
 	padding: 0;
 	pointer-events: none;
-	width: 120em;
+	width: 120rem;
 	overflow: visible;
 	border: none;
 }
@@ -67,9 +67,9 @@
 }
 
 .title {
-	font-family: 'Gilam Bold';
+	font-family: GilamBold;
 	font-weight: 700;
-	font-size: 6em;
+	font-size: 5.5em;
 	background: linear-gradient(90deg, #628794 0%, #77b770 54%, #dcc666 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -94,7 +94,7 @@
 
 .text {
 	color: #93c0c6;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .socials {
@@ -176,7 +176,6 @@
 	width: 100%;
 	padding: 0 1em;
 	color: #93c0c6;
-	font-weight: bold;
 	font-size: 1.1em;
 }
 
@@ -207,7 +206,7 @@
 
 .mailing input::placeholder {
 	color: #58797c;
-	font-family: 'Gilam Bold';
+	font-family: Roboto;
 }
 
 .success {
@@ -215,26 +214,67 @@
 }
 
 .error {
-	color: #FF6565;
+	color: #ff6565;
 }
 
 @media screen and (max-width: 1600px) {
 	.svg {
-		width: 110em;
+		width: 110rem;
 	}
 }
 
 @media screen and (max-width: 1450px) {
 	.svg {
-		width: 100em;
-		top: -10em;
+		right: -15rem;
 	}
 }
 
+@media screen and (max-width: 1240px) {
+	.svg {
+		width: 105rem;
+		top: -10rem;
+		right: -20rem;
+	}
+}
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1100px) {
+	.svg {
+		width: 95rem;
+		top: -12rem;
+		right: -20rem;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.container {
+		font-size: 1.2vw;
+	}
+	.title {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 949px) {
+	.container {
+		font-size: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	.info {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.container {
+		font-size: 1.8vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		font-size: 13px;
 	}
 }
 
@@ -280,4 +320,3 @@
 		font-size: 1.5em;
 	}
 }
-
