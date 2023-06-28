@@ -6,7 +6,7 @@ import { useMediaQuery } from 'usehooks-ts';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-	const matches = useMediaQuery('(max-width: 950px)');
+	const matches = useMediaQuery('(max-width: 1440px)');
 
 	return (
 		<div className={styles.container}>
@@ -60,13 +60,12 @@ const Home: NextPage = () => {
 						style={{ width: '40%', height: '100%', overflow: 'visible' }}
 						ref={(elem) => {
 							if (elem) {
-								console.log(elem.children);
 								(elem.children[0] as any).style.overflow = 'visible';
 								(elem.children[0].children[0] as any).style.overflow = 'visible';
 							}
-						}}>
-						<MouseParallax strength={0.2} isAbsolutelyPositioned>
-							<iframe src="line.svg" height={1080} width={2700} className={styles.svg}></iframe>
+					}}>
+						<MouseParallax strength={0.03} isAbsolutelyPositioned>
+							<iframe src="line.svg" height={1125} width={2350} className={styles.svg}></iframe>
 						</MouseParallax>
 					</div>
 				)}

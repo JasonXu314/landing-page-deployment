@@ -11,6 +11,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const post = await db.collection("MailingList").insertOne({
             email: body.email,
         });
+
+        console.log(post)
         
         res.json(post)
     } catch (e) {
