@@ -8,7 +8,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const Home: NextPage = () => {
-	const matches = useMediaQuery('(max-width: 1440px)');
+	const matches = useMediaQuery('(max-width: 900px)');
 	const [email, setEmail] = useState<string>('');
 	const [success, setSuccess] = useState<boolean>(false);
 	const [error, setError] = useState<boolean>(false);
