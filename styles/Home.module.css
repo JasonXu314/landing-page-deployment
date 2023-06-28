@@ -210,6 +210,14 @@
 	font-family: 'Gilam Bold';
 }
 
+.success {
+	color: #77b770;
+}
+
+.error {
+	color: #FF6565;
+}
+
 @media screen and (max-width: 1600px) {
 	.svg {
 		width: 110em;

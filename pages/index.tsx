@@ -4,9 +4,35 @@ import { IoSendSharp } from 'react-icons/io5';
 import { MouseParallax } from 'react-just-parallax';
 import { useMediaQuery } from 'usehooks-ts';
 import styles from '../styles/Home.module.css';
+import { useState } from 'react';
+import axios from 'axios';
 
 const Home: NextPage = () => {
 	const matches = useMediaQuery('(max-width: 1440px)');
+	const [email, setEmail] = useState<string>('');
+	const [success, setSuccess] = useState<boolean>(false);
+	const [error, setError] = useState<boolean>(false);
+
+
+	const submitEmail = () => {
+		if (email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+			axios.post('/api/Email', {
+				email
+			})
+			.then((resp) => {
+				setEmail('');
+				setError(false);
+				setSuccess(true);
+			})
+			.catch((err) => {
+				console.log(err)
+			})
+		}
+		else {
+			setError(true);
+			setSuccess(false);
+		}
+	}
 
 	return (
 		<div className={styles.container}>
@@ -25,20 +51,20 @@ const Home: NextPage = () => {
 					</div>
 					<div className={styles.mailing}>
 						<p className={styles.text}>Interested? Join our mailing list!</p>
-						<form action="/api/Email">
+						<form>
 							<input
 								type="text"
 								placeholder="Enter email address"
-								id="email"
-								name="email"
-								pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-								title="please submit a valid email address"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
 								required
 							/>
-							<button className={styles.submit}>
+							<button className={styles.submit} onClick={(e) => {e.preventDefault(); submitEmail()}}>
 								<IoSendSharp color="#0A4C72" />
 							</button>
 						</form>
+						{success && <p className={styles.success}>Your email has successfully been added!</p>}
+						{error && <p className={styles.error}>Your email is invalid. Please try again.</p>}
 					</div>
 					<div className={styles.socials}>
 						<p>Check out our socials</p>
