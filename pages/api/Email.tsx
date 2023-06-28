@@ -6,10 +6,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         const client = await clientPromise;
         const db = client.db("pickhacks_2024");
-        const body = req.query;
-
+        
         const post = await db.collection("MailingList").insertOne({
-            email: body.email,
+            email: req.body.email,
         });
         
         res.json(post)
