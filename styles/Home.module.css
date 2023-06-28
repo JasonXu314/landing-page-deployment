@@ -20,17 +20,19 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	z-index: 99;
 }
 
 .svg {
-  position: absolute;
-  top: 0;
-  right: -5em;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-  width: 100em;
-  overflow: visible;
+	position: absolute;
+	top: -8em;
+	right: -10em;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+	width: 120em;
+	overflow: visible;
+	border: none;
 }
 
 .logo {
@@ -48,6 +50,7 @@
 	align-items: center;
 	gap: 3.75em;
 	height: 100%;
+	z-index: 999;
 }
 
 .main p {
@@ -170,7 +173,7 @@
 	justify-content: center;
 	outline: none;
 	height: 100%;
-	width: 21em;
+	width: 100%;
 	padding: 0 1em;
 	color: #93c0c6;
 	font-weight: bold;
@@ -178,7 +181,7 @@
 }
 
 .submit {
-	border-radius: 0.625em;
+	border-radius: 0.8em;
 	outline: none;
 	background-image: linear-gradient(to right, #61aa6d, #4294bf, #4294bf, #61aa6d);
 	background-size: 300% 100%;
@@ -207,7 +210,29 @@
 	font-family: 'Gilam Bold';
 }
 
-@media screen and (max-width: 949px) {
+.success {
+	color: #77b770;
+}
+
+.error {
+	color: #FF6565;
+}
+
+@media screen and (max-width: 1600px) {
+	.svg {
+		width: 110em;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	.svg {
+		width: 100em;
+		top: -10em;
+	}
+}
+
+
+@media screen and (max-width: 1440px) {
 	.info {
 		width: 100%;
 	}
@@ -224,12 +249,12 @@
 		top: 1em;
 	}
 
-  .info {
-    gap: 4em;
-  }
+	.info {
+		gap: 4em;
+	}
 
 	.title {
-    font-size: 5em;
+		font-size: 5em;
 	}
 
 	.textContainer {
@@ -246,12 +271,13 @@
 		width: 25em;
 	}
 
-  .submit {
-    border-radius: 0.75em;
-  }
+	.submit {
+		border-radius: 0.75em;
+	}
 
 	.socials {
 		margin-top: auto;
-    font-size: 1.5em;
+		font-size: 1.5em;
 	}
 }
+
