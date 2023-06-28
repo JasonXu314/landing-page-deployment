@@ -48,6 +48,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-top: 4em;
 	gap: 3.75em;
 	height: 100%;
 	z-index: 999;
@@ -320,3 +321,4 @@
 		font-size: 1.5em;
 	}
 }
+

@@ -1,17 +1,18 @@
 import axios from 'axios';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoSendSharp } from 'react-icons/io5';
 import { MouseParallax } from 'react-just-parallax';
 import { useMediaQuery } from 'usehooks-ts';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-	const matches = useMediaQuery('(max-width: 900px)') || typeof window === 'undefined';
+	const matches = useMediaQuery('(max-width: 900px)');
 	const [email, setEmail] = useState<string>('');
 	const [success, setSuccess] = useState<boolean>(false);
 	const [error, setError] = useState<boolean>(false);
+	const [onClient, setOnClient] = useState<boolean>(false);
 
 	const submitEmail = () => {
 		if (
@@ -38,6 +39,12 @@ const Home: NextPage = () => {
 			setSuccess(false);
 		}
 	};
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			setOnClient(true);
+		}
+	}, []);
 
 	return (
 		<div className={styles.container}>
@@ -85,7 +92,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</div>
-				{!matches && (
+				{onClient && !matches && (
 					<div
 						style={{ width: '40%', height: '100%', overflow: 'visible' }}
 						ref={(elem) => {
