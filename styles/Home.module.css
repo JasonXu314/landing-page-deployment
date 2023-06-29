@@ -5,7 +5,7 @@
 }
 
 .main {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	background: linear-gradient(
 		90deg,
@@ -31,7 +31,6 @@
 	padding: 0;
 	pointer-events: none;
 	width: 120rem;
-	overflow: visible;
 	border: none;
 }
 
@@ -48,7 +47,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 4em;
+	padding: 4em 0;
 	gap: 3.75em;
 	height: 100%;
 	z-index: 999;
@@ -292,6 +291,7 @@
 
 	.info {
 		gap: 4em;
+        padding-top: 0;
 	}
 
 	.title {
