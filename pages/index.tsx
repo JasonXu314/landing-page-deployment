@@ -70,13 +70,15 @@ const Home: NextPage = () => {
 						<p>Check out our socials</p>
 						<div className={styles.buttonContainer}>
 							<a className={styles.socialImage} href="https://discord.gg/6PeaMzshkP" target="_blank" rel="noopener noreferrer">
-								<img src="/images/discord.png" className={styles.discord} alt="logo" />
+								<div className={styles.discord}></div>
 							</a>
 							<a className={styles.socialImage} href="https://www.linkedin.com/company/pickhacks/" target="_blank" rel="noopener noreferrer">
-								<img src="/images/linkedin.png" width={35} height={33} className={styles.linkedin} alt="logo" />
+								{/* <img src="/images/linkedin.png" width={35} height={33} className={styles.linkedin} alt="logo" /> */}
+								<div className={styles.linkedin}></div>
 							</a>
 							<a className={styles.socialImage} href="https://www.instagram.com/sandtpickhacks/" target="_blank" rel="noopener noreferrer">
-								<img src="/images/instagram.png" width={34} height={34} className={styles.instagram} alt="logo" />
+								{/* <img src="/images/instagram.png" width={34} height={34} className={styles.instagram} alt="logo" /> */}
+								<div className={styles.instagram}></div>
 							</a>
 						</div>
 					</div>

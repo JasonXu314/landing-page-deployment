@@ -121,34 +121,55 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	filter: brightness(0) saturate(100%) invert(88%) sepia(25%) saturate(345%) hue-rotate(138deg) brightness(81%) contrast(89%);
 }
 
-.socialImage:first-child:hover {
-	filter: brightness(0) saturate(100%) invert(63%) sepia(48%) saturate(5401%) hue-rotate(164deg) brightness(102%) contrast(105%);
-}
 
-.socialImage:nth-child(2):hover {
-	filter: brightness(0) saturate(100%) invert(55%) sepia(8%) saturate(3247%) hue-rotate(69deg) brightness(110%) contrast(83%);
-}
-
-.socialImage:last-child:hover {
-	filter: brightness(0) saturate(100%) invert(88%) sepia(79%) saturate(2636%) hue-rotate(325deg) brightness(100%) contrast(100%);
+.discord, .linkedin, .instagram {
+	background-size: contain;
+	height: 1em;
+	width: 1em;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .discord {
-	width: 1em;
+	background-image: url("../public/images/discord.png");
 }
 
 .linkedin {
-	width: 1em;
-	height: 1em;
+	background-image: url("../public/images/linkedin.png");
 }
 
+
 .instagram {
-	width: 1em;
-	height: 1em;
+	background-image: url("../public/images/instagram.png");
 }
+
+
+.socialImage:first-child:hover {
+	border-color: #00B8FF;
+}
+
+.socialImage:first-child:hover .discord {
+	background-image: url("../public/images/discord-color.png");
+}
+
+.socialImage:nth-child(2):hover {
+	border-color: #4EB748;
+}
+
+.socialImage:nth-child(2):hover .linkedin {
+	background-image: url("../public/images/linkedin-color.png");
+}
+
+.socialImage:last-child:hover {
+	border-color: #FFD134;
+}
+
+.socialImage:last-child:hover .instagram {
+	background-image: url("../public/images/instagram-color.png");
+}
+
 
 .mailing {
 	display: flex;
@@ -280,4 +301,3 @@
 		font-size: 1.5em;
 	}
 }
-
