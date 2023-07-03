@@ -47,7 +47,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 4em 0;
+	padding: 8em 0;
 	gap: 3.75em;
 	height: 100%;
 	z-index: 999;
@@ -71,6 +71,7 @@
 	font-weight: 700;
 	font-size: 5.5em;
 	background: linear-gradient(90deg, #628794 0%, #77b770 54%, #dcc666 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -123,8 +124,9 @@
 	cursor: pointer;
 }
 
-
-.discord, .linkedin, .instagram {
+.discord,
+.linkedin,
+.instagram {
 	background-size: contain;
 	height: 1em;
 	width: 1em;
@@ -133,43 +135,40 @@
 }
 
 .discord {
-	background-image: url("../public/images/discord.png");
+	background-image: url('/images/discord.png');
 }
 
 .linkedin {
-	background-image: url("../public/images/linkedin.png");
+	background-image: url('/images/linkedin.png');
 }
-
 
 .instagram {
-	background-image: url("../public/images/instagram.png");
+	background-image: url('/images/instagram.png');
 }
 
-
 .socialImage:first-child:hover {
-	border-color: #00B8FF;
+	border-color: #00b8ff;
 }
 
 .socialImage:first-child:hover .discord {
-	background-image: url("../public/images/discord-color.png");
+	background-image: url('/images/discord-color.png');
 }
 
 .socialImage:nth-child(2):hover {
-	border-color: #4EB748;
+	border-color: #4eb748;
 }
 
 .socialImage:nth-child(2):hover .linkedin {
-	background-image: url("../public/images/linkedin-color.png");
+	background-image: url('/images/linkedin-color.png');
 }
 
 .socialImage:last-child:hover {
-	border-color: #FFD134;
+	border-color: #ffd134;
 }
 
 .socialImage:last-child:hover .instagram {
-	background-image: url("../public/images/instagram-color.png");
+	background-image: url('/images/instagram-color.png');
 }
-
 
 .mailing {
 	display: flex;
@@ -312,7 +311,7 @@
 
 	.info {
 		gap: 4em;
-        padding-top: 0;
+		padding-top: 0;
 	}
 
 	.title {
@@ -342,3 +341,4 @@
 		font-size: 1.5em;
 	}
 }
+
