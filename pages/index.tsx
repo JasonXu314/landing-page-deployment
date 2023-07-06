@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="PickHacks 2024" />
-				<meta property="og:description" content="Come learn about Missouri S&T's annual hackathon!" />
+				<meta property="og:description" content="Sign up for emails about Missouri S&T's annual hackathon!" />
 				<meta property="og:url" content="https://pickhacks.io" />
 				<meta property="og:site_name" content="PickHacks" />
 				<meta property="og:image" content="https://pickhacks.io/images/pickhacks.png" />
