@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="PickHacks" />
-				<meta property="og:description" content="idk what to put here lol" />
+				<meta property="og:description" content="something different" />
 				<meta property="og:url" content="https://pickhacks.io" />
 				<meta property="og:site_name" content="PickHacks" />
 				<meta property="og:image" content="https://pickhacks.io/images/pickhacks.png" />
