@@ -60,7 +60,7 @@ const Home: NextPage = () => {
 				<meta property="og:description" content="idk what to put here lol" />
 				<meta property="og:url" content="https://pickhacks.io" />
 				<meta property="og:site_name" content="PickHacks" />
-				<meta property="og:image" content="https://pickhacks.io/favicon.ico" />
+				<meta property="og:image" content="https://pickhacks.io/images/pickhacks.png" />
 				<meta name="theme-color" content="#4EB748" />
 			</Head>
 			<img src="/images/pickhacks.png" alt="logo" className={styles.logo} />
