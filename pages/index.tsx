@@ -59,7 +59,7 @@ const Home: NextPage = () => {
 				<meta property="og:title" content="PickHacks 2024" />
 				<meta
 					property="og:description"
-					content="Stay in the loop and be the first to know about exciting updates, workshops, and announcements for our upcoming hackathon. Sign up for our mailing list today and join the hackathon community!"
+					content="Stay in the loop and be the first to know about exciting updates, workshops, and announcements for our upcoming hackathon. Sign up for our mailing list today and join the PickHacks community!"
 				/>
 				<meta property="og:url" content="https://pickhacks.io" />
 				<meta property="og:site_name" content="PickHacks" />
