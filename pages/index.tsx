@@ -52,7 +52,10 @@ const Home: NextPage = () => {
 				<title>PickHacks 2024</title>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="author" content="PickHacks" />
-				<meta name="description" content="Welcome site for PickHacks hackathon." />
+				<meta
+					name="description"
+					content="Stay in the loop and be the first to know about exciting updates, workshops, and announcements for our upcoming hackathon. Sign up for our mailing list today and join the PickHacks community!"
+				/>
 				<meta name="keywords" content="hackathon,mst,pickhacks" />
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="website" />
