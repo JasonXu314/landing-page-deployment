@@ -51,6 +51,17 @@ const Home: NextPage = () => {
 			<Head>
 				<title>PickHacks 2024</title>
 				<link rel="icon" href="/favicon.ico" />
+				<meta name="author" content="PickHacks" />
+				<meta name="description" content="Welcome site for PickHacks hackathon." />
+				<meta name="keywords" content="hackathon,mst,pickhacks" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="PickHacks" />
+				<meta property="og:description" content="idk what to put here lol" />
+				<meta property="og:url" content="https://pickhacks.io" />
+				<meta property="og:site_name" content="PickHacks" />
+				<meta property="og:image" content="https://pickhacks.io/favicon.ico" />
+				<meta name="theme-color" content="#4EB748" />
 			</Head>
 			<img src="/images/pickhacks.png" alt="logo" className={styles.logo} />
 
