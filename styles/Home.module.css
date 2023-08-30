@@ -2,6 +2,7 @@
 
 .container {
 	font-size: 1.1vw;
+    overflow-y: scroll;
 }
 
 .main {
@@ -227,6 +228,20 @@
 .mailing input::placeholder {
 	color: #58797c;
 	font-family: Roboto;
+}
+
+.subtext {
+    color: #58797c;
+	font-size: 1.3em;
+}
+
+.sponsor {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sponsor:hover {
+    filter: brightness(135%);
 }
 
 .success {

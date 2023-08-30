@@ -93,6 +93,7 @@ const Home: NextPage = () => {
 						</form>
 						{success && <p className={styles.success}>Your email has successfully been added!</p>}
 						{error && <p className={styles.error}>Your email is invalid. Please try again.</p>}
+                        <p className={styles.subtext}>Interested in sponsoring? <a className={styles.sponsor} onClick={() => window.location.href = 'mailto:pickhacks@mst.edu?subject=Sponsorship'}>Click here</a></p>
 					</div>
 					<div className={styles.socials}>
 						<p>Check out our socials</p>
