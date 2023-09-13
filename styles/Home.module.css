@@ -2,7 +2,12 @@
 
 .container {
 	font-size: 1.1vw;
-    overflow-y: scroll;
+}
+
+@media screen and (max-height: 700px) {
+	.container {
+		overflow-y: scroll;
+	}
 }
 
 .main {
@@ -231,17 +236,17 @@
 }
 
 .subtext {
-    color: #58797c;
+	color: #58797c;
 	font-size: 1.3em;
 }
 
 .sponsor {
-    text-decoration: underline;
-    cursor: pointer;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .sponsor:hover {
-    filter: brightness(135%);
+	filter: brightness(135%);
 }
 
 .success {
