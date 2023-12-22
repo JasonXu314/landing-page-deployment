@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Share+Tech+Mono&display=swap');
 
 .container {
-	font-size: 1.1vw;
-}
-
-@media screen and (max-height: 700px) {
-	.container {
-		overflow-y: scroll;
-	}
+	font-size: .9vw;
 }
 
 .main {
@@ -206,7 +200,7 @@
 }
 
 .submit {
-	border-radius: 0.8em;
+	border-radius: 1em;
 	outline: none;
 	background-image: linear-gradient(to right, #61aa6d, #4294bf, #4294bf, #61aa6d);
 	background-size: 300% 100%;
@@ -285,7 +279,7 @@
 	}
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
 	.container {
 		font-size: 1.2vw;
 	}
@@ -350,10 +344,6 @@
 
 	.mailing form {
 		width: 25em;
-	}
-
-	.submit {
-		border-radius: 0.75em;
 	}
 
 	.socials {
